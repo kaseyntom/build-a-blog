@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<h1 style="text-align:center"; color: red; ><b></b>Add a Blog Entry</h1>
+<form method='post'>
+  <label> <b>Title for your new Blog
+    <br>
+    <input type="text" name="blog" value='{{ blog_name }}' />
+  </label>
+  <br>
+  <br>
+  <br>
+  
+  <label> <b>New Blog Body
+    <br>
+    <input type='textarea' name='body' style=width:210px;height:120px; value '{{ blog_body }}'/>
+    <br>
+    <br>
+  </label>
+
+
+    <input type="submit" value="Add Entry" />
+</form>
+
+{% endblock %}
